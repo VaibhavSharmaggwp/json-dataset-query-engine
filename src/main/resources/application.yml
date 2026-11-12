@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: json-query-engine
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/json_engine_db
+    username: postgres
+    password: Vaibhav@007
+
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      # Validate use karenge kyunki tables hum khud Flyway se banayenge, Hibernate auto-generation se nahi
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        # JSONB support smoothly kaam kare, isliye PostgreSQL dialect specify kar rahe hain
+
+  flyway:
+    enabled: true
+    # App start hote hi Flyway automatically SQL scripts database mein run kar dega

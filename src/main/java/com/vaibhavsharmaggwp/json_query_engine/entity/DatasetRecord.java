@@ -1,6 +1,5 @@
 package com.vaibhavsharmaggwp.json_query_engine.entity;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.JdbcTypeCode;
@@ -9,10 +8,11 @@ import org.hibernate.type.SqlTypes;
 import java.time.LocalDateTime;
 import java.util.Map;
 
-@Builder
+@Entity
 @Table(name = "dataset_records")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class DatasetRecord {
@@ -20,7 +20,7 @@ public class DatasetRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "dataset_name", nullable = false)
     private String datasetName;
 
     // Interview Defense: Map<String, Object> isliye use kiya kyunki JSON structure dynamic hai.

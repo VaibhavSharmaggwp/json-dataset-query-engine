@@ -1,11 +1,14 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   application:
     name: json-query-engine
 
   datasource:
-    url: jdbc:postgresql://localhost:5433/json_engine_db
-    username: postgres
-    password: Vaibhav@007
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/json_engine_db}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:Vaibhav@007}
 
 
   jpa:

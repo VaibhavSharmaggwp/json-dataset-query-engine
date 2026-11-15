@@ -64,6 +64,14 @@ The application will start on `http://localhost:8080`.
 
 ---
 
+## 📑 Swagger / OpenAPI Documentation
+
+Interactive Swagger UI documentation is integrated:
+- **Swagger UI:** [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+- **OpenAPI 3 JSON Specification:** [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+
+---
+
 ## 📖 API Documentation
 
 ### 1. Insert Record API

@@ -2,6 +2,12 @@
 
 A robust, REST-compliant Spring Boot application designed to ingest arbitrary semi-structured JSON records and perform dynamic **Group-By** and **Sort-By** queries over relational database storage.
 
+[![Live API](https://img.shields.io/badge/Live_API-Render-brightgreen?style=for-the-badge&logo=render)](https://json-dataset-query-engine.onrender.com)
+[![Swagger UI](https://img.shields.io/badge/Swagger_UI-Interactive_Docs-orange?style=for-the-badge&logo=swagger)](https://json-dataset-query-engine.onrender.com/swagger-ui/index.html)
+[![Java 17](https://img.shields.io/badge/Java-17-blue?style=for-the-badge&logo=openjdk)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.4.2-green?style=for-the-badge&logo=springboot)](https://spring.io/projects/spring-boot)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-JSONB-blue?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
+
 ---
 
 ## 📌 Problem Statement & Architecture
@@ -64,11 +70,14 @@ The application will start on `http://localhost:8080`.
 
 ---
 
-## 📑 Swagger / OpenAPI Documentation
+## 🌐 Live Production Deployment
 
-Interactive Swagger UI documentation is integrated:
-- **Swagger UI:** [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
-- **OpenAPI 3 JSON Specification:** [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+The application is deployed live on Render with an active PostgreSQL cloud database:
+- **Live Base URL:** [https://json-dataset-query-engine.onrender.com](https://json-dataset-query-engine.onrender.com)
+- **Live Swagger UI (Interactive):** [https://json-dataset-query-engine.onrender.com/swagger-ui/index.html](https://json-dataset-query-engine.onrender.com/swagger-ui/index.html)
+- **OpenAPI 3 JSON Specification:** [https://json-dataset-query-engine.onrender.com/v3/api-docs](https://json-dataset-query-engine.onrender.com/v3/api-docs)
+
+*(For local development, Swagger UI is available at `http://localhost:8080/swagger-ui/index.html`)*
 
 ---
 
